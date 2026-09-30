@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — FullPage PDF Shot</title>
+  <style>
+    body {
+      margin: 0;
+      font: 16px/1.55 "Segoe UI", system-ui, sans-serif;
+      color: #0f172a;
+      background: #f8fafc;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; }
+    h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+    p, li { color: #334155; }
+    .muted { color: #64748b; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">FullPage PDF Shot — Chrome extension</p>
+    <p class="muted">Last updated: 2026-09-30</p>
+
+    <h2>Summary</h2>
+    <p>
+      FullPage PDF Shot captures webpages on your device so you can preview and export them.
+      Screenshot processing happens locally in the browser extension. We do not operate a custom
+      backend that receives your screenshots.
+    </p>
+
+    <h2>What we process locally</h2>
+    <ul>
+      <li>Visible-tab screenshots used to build a full-page image</li>
+      <li>Temporary capture previews stored in IndexedDB on your device</li>
+      <li>A random device identifier and license status in chrome.storage.local</li>
+    </ul>
+
+    <h2>License activation</h2>
+    <p>
+      If you activate a license, your license key (and related public license-validation fields)
+      are sent to Dodo Payments over HTTPS so the extension can activate and validate the key.
+      That traffic goes to Dodo Payments (test.dodopayments.com or live.dodopayments.com), not to
+      a custom server operated by this extension.
+    </p>
+
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not upload page screenshots to our own servers (there is no custom screenshot backend)</li>
+      <li>We do not sell personal data</li>
+      <li>We do not use analytics SDKs in this extension build</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>
+      The extension uses activeTab/scripting/tabs to scroll and capture the current page, storage
+      for license state and local captures, and host access to call Dodo Payments license APIs and
+      to capture pages you choose to photograph.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy questions about this extension, contact the publisher listed on the Chrome Web
+      Store listing for FullPage PDF Shot.
+    </p>
+  </main>
+</body>
+</html>
